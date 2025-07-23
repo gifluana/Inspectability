@@ -1,0 +1,38 @@
+modLoader = "javafml"
+loaderVersion = "[2,)"
+#issueTrackerURL = ""
+license = "MIT"
+
+[[mods]]
+modId = "inspectability"
+version = "${version}"
+displayName = "Inspectability"
+authors = "LunazStudios"
+description = '''
+A mod that allows players to inspect item models in-game, providing a closer and detailed view of the item's appearance.
+'''
+#logoFile = ""
+
+[[dependencies.inspectability]]
+modId = "neoforge"
+type = "required"
+versionRange = "[21,)"
+ordering = "NONE"
+side = "BOTH"
+
+[[dependencies.inspectability]]
+modId = "minecraft"
+type = "required"
+versionRange = "[1.21,)"
+ordering = "NONE"
+side = "BOTH"
+
+[[dependencies.inspectability]]
+modId = "architectury"
+type = "required"
+versionRange = "[13.0.8,)"
+ordering = "AFTER"
+side = "BOTH"
+
+[[mixins]]
+config = "inspectability.mixins.json"
