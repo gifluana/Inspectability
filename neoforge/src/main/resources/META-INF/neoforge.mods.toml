@@ -11,7 +11,7 @@ authors = "LunazStudios"
 description = '''
 A mod that allows players to inspect item models in-game, providing a closer and detailed view of the item's appearance.
 '''
-#logoFile = ""
+side = "CLIENT"
 
 [[dependencies.inspectability]]
 modId = "neoforge"
