@@ -23,14 +23,14 @@ side = "BOTH"
 [[dependencies.inspectability]]
 modId = "minecraft"
 type = "required"
-versionRange = "[1.21.1,)"
+versionRange = "[1.21.2,)"
 ordering = "NONE"
 side = "BOTH"
 
 [[dependencies.inspectability]]
 modId = "architectury"
 type = "required"
-versionRange = "[13.0.8,)"
+versionRange = "[14.0.4,)"
 ordering = "AFTER"
 side = "BOTH"
 
