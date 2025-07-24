@@ -30,16 +30,12 @@ public class InspectorScreen extends Screen {
     }
 
     @Override
-    public void render(GuiGraphics graphics, int mouseX, int mouseY, float delta) {
-        if (minecraft == null) return;
-
-        long elapsedTime = System.currentTimeMillis() - screenOpenedTime;
-
-        if (elapsedTime < 10000) {
-            graphics.drawString(minecraft.font, Component.translatable("tooltip.inspectability.move"), 10, 10, 0xffffff, true);
-            graphics.drawString(minecraft.font, Component.translatable("tooltip.inspectability.reposition"), 10, 20, 0xffffff, true);
-            graphics.drawString(minecraft.font, Component.translatable("tooltip.inspectability.rotate"), 10, 30, 0xffffff, true);
-            graphics.drawString(minecraft.font, Component.translatable("tooltip.inspectability.zoom"), 10, 40, 0xffffff, true);
+    public void renderBackground(GuiGraphics graphics, int mouseX, int mouseY, float delta) {
+        if (minecraft != null && (System.currentTimeMillis() - screenOpenedTime) < 10000) {
+            graphics.drawString(this.font, Component.translatable("tooltip.inspectability.move"), 10, 10, -1, true);
+            graphics.drawString(this.font, Component.translatable("tooltip.inspectability.reposition"), 10, 20, -1, true);
+            graphics.drawString(this.font, Component.translatable("tooltip.inspectability.rotate"), 10, 30, -1, true);
+            graphics.drawString(this.font, Component.translatable("tooltip.inspectability.zoom"), 10, 40, -1, true);
         }
 
         handleMouseInput(mouseX, mouseY);
