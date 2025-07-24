@@ -12,6 +12,7 @@ description = '''
 A mod that allows players to inspect item models in-game, providing a closer and detailed view of the item's appearance.
 '''
 side = "CLIENT"
+logoFile = "icon.png"
 
 [[dependencies.inspectability]]
 modId = "neoforge"
@@ -23,14 +24,14 @@ side = "BOTH"
 [[dependencies.inspectability]]
 modId = "minecraft"
 type = "required"
-versionRange = "[1.21,)"
+versionRange = "1.21.8,)"
 ordering = "NONE"
 side = "BOTH"
 
 [[dependencies.inspectability]]
 modId = "architectury"
 type = "required"
-versionRange = "[13.0.8,)"
+versionRange = "[17.0.8,)"
 ordering = "AFTER"
 side = "BOTH"
 

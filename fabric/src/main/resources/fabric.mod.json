@@ -12,7 +12,7 @@
   },
   "license": "MIT",
   "icon": "assets/inspectability/icon.png",
-  "environment": "*",
+  "environment": "client",
   "entrypoints": {
     "main": [
       "com.lunazstudios.inspectability.fabric.InspectabilityFabric"
@@ -25,10 +25,10 @@
     "inspectability.mixins.json"
   ],
   "depends": {
-    "fabricloader": ">=0.16.5",
-    "minecraft": "~1.21",
+    "fabricloader": ">=0.16.14",
+    "minecraft": "~1.21.8",
     "java": ">=21",
-    "architectury": ">=13.0.8"
+    "architectury": ">=17.0.8"
   },
   "suggests": {
     "another-mod": "*"
